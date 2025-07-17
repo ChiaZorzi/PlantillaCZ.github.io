@@ -1,0 +1,560 @@
+/* 1. VARIABLES DE DISEÑO */
+:root {
+  --secondary-color: #414448;
+  --light-color: #f8f9fa;
+  --dark-color: #171717;
+  --font-family-base: 'Poppins', sans-serif;
+  --bg-color: #fffbe6; /* o el color que quieras */
+}
+
+/* 2. ESTILOS GENERALES */
+body {
+  font-family: var(--font-family-base);
+  color: #212529;
+  background-color: #ffffb8;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  background-image: url('Imags/fondo\ 1.png');
+  background-size: cover;        /* Hace que la imagen cubra toda la pantalla */
+  background-position: center;   /* Centra la imagen */
+  background-size: auto;    /* Usa el tamaño real de la imagen */
+}
+/* 3. NAVBAR */
+.navbar {
+  background-color: transparent;
+  transition: background-color 0.3s, box-shadow 0.3s;
+  padding: 15px 0;
+}
+
+.navbar.scrolled {
+  background-color: #444400;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-brand {
+  font-weight: 600;
+  font-size: 1.7rem;
+  color: var(--dark-color);
+}
+
+.nav-link {
+  color: var(--dark-color);
+  font-weight: 500;
+  margin-left: 20px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+}
+
+/* 4. HERO */
+.row.p-5 {
+  min-height: 90vh;
+  display: flex;
+  align-items: center;
+  padding-top: 100px;
+}
+
+h1, h2, h3, h4, h5 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--dark-color);
+}
+
+p {
+  font-size: 1rem;
+  color: #6c757d;
+}
+
+/* Botones */
+.btn {
+  border-radius: 50px;
+  padding: 10px 30px;
+  font-weight: 500;
+  transition: all 0.3s ease-in-out;
+}
+
+.btn-dark {
+  background-color: var(--primary-color);
+   color: var(--primary-color);
+}
+
+.btn-dark:hover {
+  
+  background-color: #444400;
+  
+}
+
+.btn-outline-dark {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.btn-outline-dark:hover {
+  color: #fff;
+    background-color: #444400;
+}
+
+/* 5. SECCIONES */
+section {
+  padding: 100px 0;
+}
+
+section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+section h2::after {
+  display: block;
+  width: 60px;
+  height: 3px;
+  background: var(--primary-color);
+  margin: 20px auto 0;
+}
+
+/* 6. CARDS */
+.card {
+  background-color: var(--bg-color)
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+.masonry__container {
+  column-count: 4;
+  column-gap: 1rem;
+}
+
+.masonry__item {
+  width: 100%;
+  display: block;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+}
+
+.card-text {
+  color: #6c757d;
+}
+
+/* 7. TESTIMONIOS */
+.blockquote {
+  background-color: var(--light-color);
+  border-left: 4px solid var(--primary-color);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+/* 8. FORMULARIO */
+form .form-control {
+  border-radius: 8px;
+  border: 1px solid #ced4da;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* sombra suave */
+  border: 1px solid #ccc; /* opcional: suaviza el borde */
+  transition: box-shadow 0.3s ease; /* suave al foco */
+}
+
+.form-control:focus {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); /* más visible al hacer foco */
+  border-color: #444400; /* opcional: cambia el borde al foco */
+}
+
+form button.btn-primary {
+  background-color: var(--primary-color);
+  border: none;
+  width: 100%;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+
+/* 9. FOOTER */
+footer {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+
+/* 10. IMÁGENES */
+img.rounded-circle {
+  border: 5px solid var(--light-color);
+}
+
+/* 11. GALERÍA */
+.container .row img {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.container .row img:hover {
+  transform: scale(1.05);
+  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* ============================== */
+/* CUSTOM HELPER CLASSES */
+/* ============================== */
+
+/* TITULOS */
+.h1-custom {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--dark-color);
+}
+
+.h2-custom {
+  font-size: 2.5rem;
+  font-weight: 600;
+  line-height: 1.3;
+  color: var(--dark-color);
+}
+
+.h3-custom {
+  font-size: 2rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--dark-color);
+}
+
+.h4-custom {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: var(--dark-color);
+}
+
+/* PÁRRAFOS Y TEXTOS */
+.p-custom {
+  font-size: 1rem;
+  color: var(--secondary-color);
+  line-height: 1.6;
+}
+
+.lead-custom {
+  font-size: 1.25rem;
+  font-weight: 400;
+  color: var(--secondary-color);
+}
+
+/* FONDOS E IMÁGENES */
+.bg-cover {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bg-overlay-light {
+  background-color: rgba(255,255,255,0.7);
+  backdrop-filter: blur(5px);
+}
+
+.bg-overlay-dark {
+  background-color: rgba(0,0,0,0.5);
+  backdrop-filter: blur(5px);
+  color: #fff;
+}
+
+.img-rounded {
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* TEXTOS ADICIONALES */
+.text-uppercase-custom {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
+.text-muted-custom {
+  color: #6c757d;
+}
+
+/* ESPACIADOS */
+.section-spacing {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.section-spacing-sm {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+
+/* ============================== */
+/* MEDIA QUERIES */
+/* ============================== */
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .masonry__container {
+    column-count: 3;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .masonry__container {
+    column-count: 2;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .masonry__container {
+    column-count: 1;
+  }
+}
+
+.seccion-con-fondo {
+  background-image: url('Imags/Fondo\ H.png'); /* cambiá el nombre si tu imagen es otra */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+  overflow: hidden;
+}
+
+.seccion-con-fondo::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100px; /* altura de la sombra */
+  width: 100%;
+  background: linear-gradient(to bottom, rgba(0,0,0,0) 0%, rgba(0, 0, 0, 0.6) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.fondo-wine {
+  background-image: url('Imags/Map.png'); /* cambiá el nombre si tu imagen es otra */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+      background-attachment: fixed;
+    padding: 20px; /* importante para que el fondo se vea rodeando las imágenes */
+}
+
+.col-md-4 img {
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  will-change: auto !important;
+}
+
+.swap-item {
+  transition: transform 1.2s ease;
+  z-index: 1;
+}
+
+.swap-grupo:hover .swap-1 {
+  transform: translateX(200%);
+}
+
+.swap-grupo:hover .swap-2 {
+  transform: translateX(-200%);
+}
+
+.col-lg-6 img {
+  transform: none !important;
+  transition: none !important;
+  box-shadow: none !important;
+  will-change: auto !important;
+}
+
+.btn-suscripcion {
+  background-color: #ffffb8;   /* Color inicial personalizado (vino, por ejemplo) */
+    color: black;                /* Texto en blanco */
+     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+  
+}
+.btn-suscripcion:hover {
+  background-color: #444400;   /* Hover oscuro */
+  border-color: #444400;
+  color: white;                /* Aseguramos que en hover siga en blanco */
+}
+
+.btn-white {
+  background-color: var(--dark);
+    border-color: #ffffff;
+    color: rgb(255, 255, 255);                /* Texto en blanco */
+}
+.btn-white:hover {
+    background-color: #444400;   /* Hover oscuro */
+  border-color: #444400;
+  color: white;                /* Aseguramos que en hover siga en blanco */
+}
+
+.p-color-especial {
+  color: #fffaf1 !important;
+ text-shadow: 1px 2px 3px rgba(0, 0, 0, 0.8);
+}
+.brand-color {
+  color: #fffaf1 !important; /* Color del nombre "UvaClub" */
+}
+.item-color {
+  color: #fffaf1 !important; /* Color de los ítems del menú */
+}
+.item-color:hover {
+  color: #ffffff6f !important; /* Color al hacer hover */
+}
+
+.contacto-bg {
+  background-image: url('Imags/Contacto\ fondo.png'); /* o el path que corresponda */
+  background-size: cover;         /* que cubra toda la sección */
+  background-position: center;    /* centrada */
+  background-repeat: no-repeat;   /* que no se repita */
+  padding: 60px 0;                /* opcional: espacio arriba y abajo */
+}
+
+.precio-custom {
+  color: var(--dark-color); /* o poné directamente un color como #5a2d0c */
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.3); /* sombra opcional */
+  transition: color 0.4s ease, transform 0.4s ease;
+}
+
+.precio-custom:hover {
+  color: #444400; /* cambia el color al pasar el mouse */
+  transform: scale(1.05); /* agranda levemente */
+}
+
+.btn-oscuro {
+    color: #92920b;                /* Texto en blanco */
+}     
+
+.contacto-bg {
+  background-image: url('Imags/Contacto\ fondo.png');
+  background-size: cover;
+  background-position: center;
+  padding: 60px 30px 40px 30px;  /* 60px arriba para separar el título */
+  border-radius: 10px;
+}
+
+
+.footer-uvaclub {
+  background-color: #2d1e1e; /* color vino oscuro */
+  color: #ffffff;
+}
+
+.footer-link {
+  color: #ffffff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.footer-link:hover {
+  text-decoration: underline;
+}
+
+.footer-icon {
+  color: #ffffff;
+  font-size: 1.2rem;
+}
+
+.footer-icon:hover {
+  color: #d4b26c; /* dorado suave */
+}
+
+.footer-uvaclub {
+  background-color: #444400; /* color vino oscuro */
+  color: #ffffff;
+}
+
+
+/* Fondo del botón del acordeón (cerrado) */
+.accordion-button {
+  background-color: #ffffb8; /* beige claro o el que quieras */
+  color: #444400;            /* texto oscuro vino */
+  border: none;
+}
+
+/* Fondo del botón cuando está abierto */
+.accordion-button:not(.collapsed) {
+  background-color: #ffffb8; /* color más intenso */
+  color: #444400;
+  box-shadow: none;          /* quita el borde brillante */
+}
+
+/* Quitar el borde azul de "focus" (clic) */
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: transparent;
+}
+
+/* Fondo del contenido desplegado */
+.accordion-body {
+  background-color: #ffffff; /* color de fondo interno */
+  color: #444400;
+  border-top: 1px solid #ffffff; /* línea sutil separadora */
+}
+
+/* Borde del item */
+.accordion-item {
+  border: 1px solid #ffffb8;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+#galeria-scroll {
+  scroll-behavior: smooth;
+  white-space: nowrap;
+  max-width: 1000px; /* Limita el ancho visible */
+  margin: 0 auto;    /* Centra el carrusel horizontalmente */
+}
+#galeria-scroll img {
+  flex: 0 0 auto;
+}
+
+.section-sub {
+  background-color: #171717;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  color: white; /* para que el texto se lea bien */
+  padding: 60px 20px;
+  z-index: 0;
+}
+
+.h2-customer {
+  color: white;
+}
+.p-customer {
+  color: white;
+}
+
+body {
+  font-family: 'IBM Plex Serif', serif;
+}
+
+h1, h2, h3 {
+  font-family: 'IBM Plex Serif', serif;
+}
