@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Configuración básica del documento -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plantilla Visible - Belluccia 3</title>
+
+    <!-- Tipografía desde Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Serif&display=swap" rel="stylesheet">
+
+    <!-- Framework CSS de Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+  .p-color-especial {
+    color: #fffaf1 !important;
+  }
+    body {
+      font-family: 'IBM Plex Serif', serif;
+    }
+</style>
+</head>
+<body>
+
+<!-- NAVBAR: Menú de navegación fijo superior -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <!-- Logo o nombre del sitio -->
+<a class="navbar-brand brand-color" href="#">UvaClub</a>
+    <!-- Botón para mostrar menú en mobile -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <!-- Ítems del menú -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav">
+      <li class="nav-item"><a class="nav-link item-color" href="#">Home</a></li>
+      <li class="nav-item"><a class="nav-link item-color" href="#">Historia</a></li>
+      <li class="nav-item"><a class="nav-link item-color" href="#">Suscripciones</a></li>
+      <li class="nav-item"><a class="nav-link item-color" href="#">Selecciones</a></li>
+      <li class="nav-item"><a class="nav-link item-color" href="#">WineSwap</a></li>
+      <li class="nav-item"><a class="nav-link item-color" href="#">Contacto</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /NAVBAR -->
+
+<!-- HERO: Sección de portada con llamado a la acción -->
+  <section class="section-spacing seccion-con-fondo" style="min-height: 100vh; padding-top: 100px;">
+  <div class="container d-flex align-items-center justify-content-between">
+  <div class="row align-items-center"></div>
+    <!-- Texto principal -->
+    <div class="col-lg-6">
+<h1 class="h1-custom p-color-especial">Encontrá tu experiencia en cada caja</h1>
+<p class="p-custom p-color-especial">Cada mes, una nueva travesía en botella desde diferentes partes del mundo</p>
+      <div class="d-flex gap-3 mt-4">
+        <a href="#" class="btn btn-suscripcion">Suscripciones</a>
+        <a href="#" class="btn btn-white">Cepas</a>
+      </div>
+    </div>
+    <!-- Imagen destacada -->
+    <div class="col-lg-6 text-center">
+      <img src="Imags/Fondo Home.png" class="img-fluid img-rounded" alt="Imagen Hero">
+    </div>
+  </div>
+</section>
+<!-- /HERO -->
+
+<!-- TEAM: Presentación del equipo -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Sumate a la experiencia</h2>
+  <div class="row mt-5">
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="Imags/brújula.png" class="caja" alt="Miembro 1">
+      <h5>Descubrí</h5>
+      <p class="p-custom">regiones del vino</p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+      <img src="Imags/explorer.png" class="caja" alt="Miembro 1">
+      <h5>La mejor curaduría</h5>
+      <p class="p-custom">está acá</p>
+    </div>
+    <!-- Cada columna es un integrante -->
+    <div class="col-md-4 mb-4">
+     <img src="Imags/BP.png" class="caja" alt="Miembro 1">
+     <h5>Suscribite</h5>
+      <p class="p-custom">para explorar sabor</p>
+    </div>
+  </div>
+</section>
+<!-- /TEAM -->
+
+<!-- SECCIÓN B: Imagen izquierda, texto derecha -->
+<section class="section-spacing container">
+  <div class="row align-items-center">
+    <!-- Columna de imagen -->
+    <div class="col-lg-6 img text-center mb-4 mb-lg-0">
+      <img src="Imags/FondoN.png"img-fluid img-rounded alt="Imagen ilustrativa">
+    </div>
+    <!-- Columna de texto -->
+    <div class="col-lg-6">
+      <h1 class="h1-custom">Nosotros</h1>
+      <p class="lead-custom">Exploramos viñedos para brindarte vinos con historia, únicos y con carácter. Cada mes, una caja con fragmentos embotellados de cultura y pasión, para que descubras el mundo a través del vino.</p>
+<p><b> Ofrecemos pasiones embotelladas.</b></p>
+      <a href="#" class="btn btn-dark mt-3">Leer más</a>
+    </div>
+  </div>
+</section>
+
+<!-- /ABOUT -->
+ <!-- PLANES DE SUSCRIPCIÓN: Sección con 3 opciones destacadas -->
+<section class="section-sub">
+  <div class="container text-center section-sub">
+  <h2 class="h2-customer">Suscripciones</h2>
+  <p class="p-customer">Elegí el plan que se adecúe a tus ganas de experimentar</p>
+  
+  <div class="row mt-5">
+    
+    <!-- Card: Plan Básico -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Plan Excursión</h5>
+<p class="display-6 precio-custom">$120.000 <br><small>al mes</small></br></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="Imags/Plan1.png" class="img-fluid img-rounded my-3" alt="Plan Básico">
+
+        <!-- Descripción -->
+        <p class="p-custom">Ideal para comenzar</p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 1 botella de vino de autor/clásico seleccionada al mes</li>
+          <li>✔ 1 accesorio</li>
+          <li>✔ Descuento del 5% en compras 
+adicionales en la tienda online</li>
+          <li>Beneficio de la caja: Ideal para quienes 
+quieren explorar sin comprometerse 
+a un gasto elevado</li>
+<li><b>WineSwap (intercambio)</b></li>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+        </ul>
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-suscripcion">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Pro (Recomendado) -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Plan Explorador<span class="badge btn-oscuro">Recomendado</span></h5>
+<p class="display-6 precio-custom">$160.000 <br><small>al mes</small></br></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="Imags/Plan2.png" class="img-fluid img-rounded my-3" alt="Plan Pro">
+
+        <!-- Descripción -->
+        <p class="p-custom">Perfecto para buen paladar</p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 2 botellas de vino de autor/clásico selección cuidada al mes </li>
+          <li>✔ 5  accesorios</li>
+          <li>✔ Guías detalladas + acceso a vídeos 
+exclusivos de catas con sommeliers</li>
+          <li>✔ Acompañamiento para maridar
+- 1 bolsa pequeña de frutos secos </li>
+<li>✔ Descuento del 15% en compras 
+adicionales en la tienda online </li>
+<li>✔ Juego de mesa</li>
+<li> Beneficio de la caja: Balance entre 
+calidad y variedad, contenido educativo.</li>
+<li><b>WineSwap (intercambio)</b></li>
+<br>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-suscripcion">Elegir plan</a>
+      </div>
+    </div>
+
+    <!-- Card: Plan Full -->
+    <div class="col-md-4 mb-4">
+      <div class="card p-4 h-100">
+        <!-- Título y precio -->
+        <h5 class="text-uppercase">Plan Espíritu aventurero</h5>
+<p class="display-6 precio-custom">$230.000 <br><small>al mes</small></br></p>
+        
+        <!-- Imagen ilustrativa -->
+        <img src="Imags/Plan3.png" class="img-fluid img-rounded my-3" alt="Plan Full">
+
+        <!-- Descripción -->
+        <p class="p-custom">Tu experiencia completa</p>
+        
+        <!-- Lista de beneficios -->
+        <ul class="list-unstyled text-start mx-auto" style="max-width: 250px;">
+          <li>✔ 2 o 3 botellas de vino de autor/clásico 
+premium al mes</li>
+          <li>✔ 1 botella de vino internacional</li>
+          <li>✔ 5 accesorios de lujo</li>
+          <li>✔ Certificados exclusivos</li>
+          <li>✔ Acceso VIP a eventos de cata 
+y bodegas</li>
+          <li>✔ Asesoría personalizada: con 
+Sommelier en persona o videollamada</li>
+          <li>✔ Juegos de mesa</li>
+          <li>✔ Descuento del 25% en compras 
+adicionales en la tienda online</li>
+<li>Beneficio de la caja: Experiencia 
+exclusiva y de alto valor percibido.</li>
+<li><b>WineSwap (intercambio)</b></li>
+        </ul>
+
+        <!-- Botón CTA -->
+        <a href="#" class="btn btn-suscripcion">Elegir plan</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /PLANES DE SUSCRIPCIÓN -->
+
+<!-- SERVICES: Servicios o funcionalidades -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Para vos</h2>
+  <p class="mb-5">Un poco para que cepa</p>
+  <div class="row">
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="Imags/Some.png" class="mb-3" alt="Servicio">
+        <h5>Catadores</h5>
+                <a href="#" class="btn btn-dark">Explorar</a>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="Imags/Cepa.png" class="mb-3" alt="Servicio">
+        <h5>Las cepas</h5>
+                        <a href="#" class="btn btn-dark">Explorar</a>
+      </div>
+    </div>
+    <!-- Cada columna es una tarjeta de servicio -->
+    <div class="col-md-4 mb-4">
+      <div class="card h-100 p-4">
+        <img src="Imags/Balde.png" class="mb-3" alt="Servicio">
+        <h5>Bodegas</h5>
+                        <a href="#" class="btn btn-dark">Explorar</a>
+      </div>
+    </div>
+    <!-- ... repetir estructura para más servicios ... -->
+  </div>
+</section>
+<!-- /SERVICES -->
+
+<!-- GALERÍA A: Grid clásico de 3 columnas -->
+<section class="section-spacing container py-5 text-center">
+  <h2 class="mb-4" class="h2-custom">WineSwap</h2>
+  <p class="mb-5">¿Buscas repetir una experiencia memorable hacia nuevos sabores?<br>Con nuestro swap vas a poder intercambiar tus productos con los de la comunidad</p>
+  <div class="row g-4 fondo-wine swap-grupo">
+    <div class="col-md-4 position-relative swap-item swap-1"><img src="Imags/swap1.png" class="img-fluid img-rounded rounded" alt="Imagen 1"></div>
+    <div class="col-md-4"><img src="Imags/swap.png" class="img-fluid img-rounded rounded" alt="Imagen 2"></div>
+    <div class="col-md-4 position-relative swap-item swap-2"><img src="Imags/swap2.png" class="img-fluid img-rounded rounded" alt="Imagen 3"></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS: Opiniones de clientes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Reseñas</h2>
+  <div class="row">
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “Como bodegueros jubilados, somos exigentes... pero el ‘Pack Premium’ 
+nos sorprendió. El blend bordelés de la última caja tenía gusto al paladar
+que rara vez encontramos fuera de Francia. Y la invitación a la cata virtual 
+de la bodega Patagonia fue un lujo inesperado.”
+        <footer class="blockquote-footer mt-3">Eduardo y Silvia
+Catadores (Mendoza)</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “Soy nueva en el mundo del vino y el plan ‘Enófilo’ es perfecto: cada botella viene 
+con una sugerencia de maridaje sencilla. La opción de swap me salvó cuando recibí 
+un tinto demasiado tánico para mi gusto, lo cambié por un Pinot Noir delicioso 
+sin costo extra. ¡Muy buen servicio!”
+        <footer class="blockquote-footer mt-3">Lucía Martinez
+Joven Profesional (Córdoba)</footer>
+      </blockquote>
+    </div>
+    <!-- Cada columna es un testimonio -->
+    <div class="col-md-4">
+      <blockquote class="blockquote p-4">
+        “Hace tres meses que soy parte del club de suscripción premium y cada 
+entrega es una clase magistral en mi propia casa. La última caja incluía 
+un Malbec de altura de Cafayate que era pura elegancia en copa. 
+¡Y la ficha técnica con datos de la cosecha fue un detalle increíble!”
+        <footer class="blockquote-footer mt-3">Carlos T. Dorrego
+Enólogo Aficionado (Buenos Aires)</footer>
+      </blockquote>
+    </div>
+  </div>
+</section>
+<!-- /TESTIMONIALS -->
+
+<section class="section-spacing container py-5 text-center">
+  <h2 class="mb-4 h2-custom">Galería de fotos</h2>
+
+  <div class="position-relative">
+    <!-- Botón izquierdo -->
+    <button id="galeria-prev" class="btn btn-dark position-absolute top-50 start-0 translate-middle-y z-3">
+      ‹
+    </button>
+
+    <!-- Contenedor con scroll -->
+    <div id="galeria-scroll" class="d-flex overflow-auto gap-3 px-5">
+      <img src="Imags/foto1.png" class="rounded" alt="Item 1" style="height: 200px;">
+      <img src="Imags/foto2.png" class="rounded" alt="Item 2" style="height: 200px;">
+      <img src="Imags/foto3.png" class="rounded" alt="Item 3" style="height: 200px;">
+      <img src="Imags/foto4.png" class="rounded" alt="Item 4" style="height: 200px;">
+      <img src="Imags/foto5.png" class="rounded" alt="Item 5" style="height: 200px;">
+    </div>
+
+    <!-- Botón derecho -->
+    <button id="galeria-next" class="btn btn-dark position-absolute top-50 end-0 translate-middle-y z-3">
+      ›
+    </button>
+  </div>
+</section>
+
+<!-- FAQS: Preguntas frecuentes -->
+<section class="section-spacing container text-center">
+  <h2 class="h2-custom">Preguntas Frecuentes</h2>
+  <p class="p-custom">Algunas soluciones a preguntas recurrentes</p>
+
+  <div class="accordion mt-5" id="faqAccordion">
+
+    <!-- Pregunta 1 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingOne">
+        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          ¿Qué incluye cada caja de suscripción?
+        </button>
+      </h2>
+      <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Cada caja incluye 2 o 3 botellas seleccionadas por sommeliers, fichas explicativas, maridajes sugeridos y, en ocasiones, accesorios sorpresa como sacacorchos o copas.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 2 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingTwo">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          ¿Puedo elegir los vinos que recibo?
+        </button>
+      </h2>
+      <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          No, nuestras cajas son sorpresa, pensadas para que descubras nuevos sabores. Sin embargo, podés elegir entre packs tintos, blancos o mixtos al momento de suscribirte.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 3 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingThree">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          ¿Cómo y cuándo se realizan los envíos?
+        </button>
+      </h2>
+      <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Realizamos los envíos entre el día 1 y 10 de cada mes, a domicilio en todo el país. Te notificamos por mail cuando tu caja esté en camino.
+        </div>
+      </div>
+    </div>
+
+    <!-- Pregunta 4 -->
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          ¿Puedo cancelar mi suscripción en cualquier momento?
+        </button>
+      </h2>
+      <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#faqAccordion">
+        <div class="accordion-body">
+          Sí, podés cancelar en cualquier momento desde tu perfil. No hay compromisos ni cargos extra por cancelación.
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+<!-- /FAQS -->
+
+<!-- CONTACT FORM: Formulario de contacto -->
+<section class="section-spacing container contacto-bg">
+  <h2 class="mb-2 h2-custom text-center">Formulario de Contacto</h2>
+  <p class="p-custom text-center">Enviá un mensaje para comunicarte con nosotros</p>
+  
+  <div class="row align-items-center">
+    <div class="col-md-6">
+      <form>
+        <div class="mb-3">
+          <input type="text" class="form-control" placeholder="Tu nombre">
+        </div>
+        <div class="mb-3">
+          <input type="email" class="form-control" placeholder="Tu email">
+        </div>
+        <div class="mb-3">
+          <textarea class="form-control" rows="4" placeholder="Tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-suscripcion">Enviar Mensaje</button>
+      </form>
+    </div>
+
+    <div class="col-md-6 text-center">
+      <img src="Imags/bsmap.png" alt="Imagen ilustrativa" class="img-fluid rounded">
+    </div>
+  </div>
+</section>
+<!-- /CONTACT FORM -->
+
+<footer class="footer-uvaclub text-white py-5 mt-5">
+  <div class="container">
+    <div class="row">
+      
+      <!-- Columna 1: Sobre UvaClub -->
+      <div class="col-md-4 mb-4">
+        <h5 class="mb-3">UvaClub</h5>
+      </div>
+
+      <!-- Columna 2: Navegación -->
+      <div class="col-md-4 mb-4">
+        <ul class="list-unstyled">
+          <li><a href="#suscripciones" class="footer-link">Suscripciones</a></li>
+          <li><a href="#nosotros" class="footer-link">Nosotros</a></li>
+          <li><a href="#contacto" class="footer-link">Contacto</a></li>
+          <li><a href="#faq" class="footer-link">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Columna 3: Contacto y redes -->
+      <div class="col-md-4 mb-4">
+        <h6 class="mb-3">Contacto</h6>
+        <p class="small mb-1"><i class="bi bi-envelope me-2"></i>UVACLUBbelluccia@uvaclub.com</p>
+        <p class="small"><i class="bi bi-geo-alt me-2"></i>Ciudad Universitaria-CABA-Argentina</p>
+        <div class="mt-3">
+          <a href="#" class="footer-icon me-3"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="footer-icon me-3"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="footer-icon"><i class="bi bi-youtube"></i></a>
+        </div>
+      </div>
+
+    </div>
+
+    <hr class="border-light mt-4">
+    <p class="text-center small mb-0">© 2025 Belluccia | UvaClub. Todos los derechos reservados.</p>
+  </div>
+</footer>
+
+<!-- Bootstrap Bundle JS (incluye Popper) -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+
+<!-- Script personalizado para cambiar el navbar al hacer scroll -->
+<script>
+window.addEventListener('scroll', function() {
+  const navbar = document.querySelector('.navbar');
+  navbar.classList.toggle('scrolled', window.scrollY > 50);
+});
+</script>
+
+<!-- Scripts adicionales -->
+<script src="scripts.js"></script>
+</body>
+</html>
